@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <title>Array Remover</title>
+
+<button onclick="myFunction()">Array Remover</button>
+
+<p id="item"></p>
+
+<script>
+var fruits = ['Jeruk', 'Pepaya', 'Jambu', 'Anggur', 'Melon'];
+document.getElementById("item").innerHTML = fruits;
+
+function myFunction() {
+  fruits.splice(2,1) ;
+  document.getElementById("item").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

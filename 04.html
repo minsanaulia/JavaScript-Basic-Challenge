@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Kabisat</title>
+<script type="text/javascript">
+    function cek() 
+    {
+       var tahun = document.getElementById("tahun").value;
+       var str;
+ 
+       if(tahun % 4 == 0)
+       {
+          if(tahun % 100 == 0)
+          {
+            if(tahun % 400 == 0)
+            {
+               str = "Tahun " + tahun + " : Kabisat";
+            }
+            else
+            {
+               str = "Tahun " + tahun + " : Bukan Kabisat";
+            }
+          }
+          else
+          {
+              str = "Tahun " + tahun + " : Kabisat";   
+          }
+       }
+       else
+       {
+          str = "Tahun " + tahun + " : Bukan Kabisat";
+       }
+       document.getElementById("hasil").innerHTML = str;
+    }
+ 
+ </script>
+
+ <form>
+     Tahun:
+     <input type="text" name="tahun" id="tahun">
+     <input type="button" onclick="cek()" value="Cek">
+ </form>
+
+ <div id="hasil"></div>
+ </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grade</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Input:");
+        var grade = "";
+
+        if(nilai >= 90) grade = "A"
+        else if((nilai >= 80) && (nilai <= 89)) grade = "B"
+        else if((nilai >= 70) && (nilai <= 79)) grade = "C"
+        else if((nilai >= 60) && (nilai <= 69)) grade = "D"
+        else if(nilai <= 59) grade = "E";
+
+        document.write(`<p>Output: ${grade}</p>`);
+    </script>
+</body>
+</html>

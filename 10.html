@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <title>Add to Array</title>
+
+<button onclick="myFunction()">Add to Array</button>
+
+<p id="item"></p>
+
+<script>
+var stuff = ['Meja', 'Buku', 'Topi', 'Baju', 'Kayu'];
+document.getElementById("item").innerHTML = stuff;
+
+function myFunction() {
+    stuff.unshift("Handuk");
+    stuff.push("Celana");
+  document.getElementById("item").innerHTML = stuff;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Film Rating</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Input:");
+        var grade = "";
+
+        if(nilai >= 21) grade = "DEWASA"
+        else if(nilai >= 13) grade = "REMAJA"
+        else if(nilai >= 9) grade = "BIMBINGAN ORANG TUA"
+        else if(nilai < 9) grade = "SEMUA USIA";
+
+        document.write(`<p>Output: ${grade}</p>`);
+    </script>
+</body>
+</html>
